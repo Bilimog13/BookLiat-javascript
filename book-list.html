@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Book App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+<body>
+    
+    <div class="container mt-5">
+        <h1 class="display-4 text-center" style="font-size: 5rem; ;"><i class="fas fa-book-reader" style="
+            color: darkseagreen; font-size: 8rem;"></i>My<span style="color: darkseagreen;">Book</span>List
+            </h1>
+
+     
+  <div class="alert alert-danger d-none" style="font-size: 20px;">Please fill input boxs!</div>
+  <div class="alert alert-success d-none" style="font-size: 20px;">New book added in list!</div>
+        
+      
+
+       <form id="book-form" style="display: block;">
+           <div class="form-group">
+               <label for="title" style="font-size: 2.3rem;">Title</label>
+               <input type="text" id="title" class="form-control">
+           </div>
+           <div class="form-group">
+            <label for="author" style="font-size: 2.3rem;">Author</label>
+            <input type="text" id="author" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="page-n" style="font-size: 2.3rem;">Page Number</label>
+            <input type="text" id="page-n" class="form-control">
+        </div>
+        <div class="form-group">
+            <button id="submit" class="btn btn-block" style="background-color: darkseagreen; font-size: 1.5rem;">submit</button>
+        </div>
+       </form>
+
+       <table class="table" >
+           <thead>
+               <tr>
+                   <th>Title</th>
+                   <th>Author</th>
+                   <th>Page Number</th>
+                   <th><!--<button type="button" data-ng-click="iptal()" 
+                    class="close custom-modal-close-button" aria-hidden="true">
+                    &times;</button>--></th>
+               </tr>
+           </thead>
+
+           <tbody class="mb-9" id="book-list">
+
+           </tbody>
+       </table>
+
+
+
+
+    </div>
+
+
+
+    <script src="book-list.js"></script>
+</body>
+</html>
